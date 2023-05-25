@@ -16,12 +16,12 @@ Download _HardeningKitty_ and copy it to the target system (script and lists). T
 # For Windows Server 2019 - Domain Controller - Level 1 Compliance
 PS C:\tmp> Import-Module .\HardeningKitty.psm1
 PS C:\tmp> Invoke-HardeningKitty -Mode Config -Backup -FileFindingList .\lists\cis_windows_server_2019_1.2.1_domain_controller_l1.csv
-PS C:\tmp> Invoke-HardeningKitty -Mode HailMary -Report -FileFindingList .\lists\cis_windows_server_2019_1.2.1_domain_controller_l1.csv
+PS C:\tmp> Invoke-HardeningKitty -Mode HailMary -Report -FileFindingList .\lists\cis_windows_server_2019_1.2.1_domain_controller_l1.csv -SkipRestorePoint
 
 # For Windows Server 2022 - Domain Controller - Level 1 Compliance
 PS C:\tmp> Import-Module .\HardeningKitty.psm1
 PS C:\tmp> Invoke-HardeningKitty -Mode Config -Backup -FileFindingList .\lists\cis_windows_server_2022_1.2.1_domain_controller_l1.csv
-PS C:\tmp> Invoke-HardeningKitty -Mode HailMary -Report -FileFindingList .\lists\cis_windows_server_2022_1.2.1_domain_controller_l1.csv
+PS C:\tmp> Invoke-HardeningKitty -Mode HailMary -Report -FileFindingList .\lists\cis_windows_server_2022_1.2.1_domain_controller_l1.csv -SkipRestorePoint
 
 ## HardeningKitty Score
 
