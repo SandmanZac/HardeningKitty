@@ -1,9 +1,0 @@
-# For Windows Server 2019 - Domain Controller - Level 1
-Import-Module .\HardeningKitty.psm1
-Invoke-HardeningKitty -Mode Config -Backup -FileFindingList .\lists\cis_windows_server_2019_1.2.1_domain_controller_l1.csv
-Invoke-HardeningKitty -Mode HailMary -Report -FileFindingList .\lists\cis_windows_server_2019_1.2.1_domain_controller_l1.csv
-
-# For Windows Server 2022 - Domain Controller - Level 1
-Import-Module .\HardeningKitty.psm1
-Invoke-HardeningKitty -Mode Config -Backup -FileFindingList .\lists\cis_windows_server_2022_1.2.1_domain_controller_l1.csv
-Invoke-HardeningKitty -Mode HailMary -Report -FileFindingList .\lists\cis_windows_server_2022_1.2.1_domain_controller_l1.csv
